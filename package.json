@@ -19,6 +19,8 @@
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "mysql": "^2.18.1",
+    "mysql-async-wrapper": "^2.0.1",
+    "mysqlconnector": "^1.0.19",
     "nodemon": "^2.0.4",
     "startbootstrap-clean-blog": "^5.0.9"
   }
