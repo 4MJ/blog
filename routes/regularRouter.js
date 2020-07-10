@@ -51,7 +51,9 @@ router.get('/', async (req, res) => {
 
 // //displaying a single post
 router.get('/post/:id', async (req, res) => {
-    let sql= "SELECT blogpost.author_name, blogpost.blog_title, blogpost.blog_desc, blogpost.content FROM blogpost";
+  //TODO Check the id factor.
+    let sql= "SELECT blogpost.author_name, blogpost.blog_title, blogpost.blog_desc, blogpost.content FROM blogpost"; 
+    //"WHERE id="+id.params.id;
     let query = conn.query(sql, (err, results)=>{
         if (err){
             throw err;
