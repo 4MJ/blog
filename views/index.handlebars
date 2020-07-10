@@ -9,6 +9,9 @@
           <h1>Tech Blog</h1>
           <span class="subheading">Let's talk about innovations and latest trends in Technology.</span>
         </div>
+        <div class="site-heading">
+            <a class="btn btn-primary float-right" href="/posts/new">Create a post</a>
+        </div>
       </div>
     </div>
   </div>
@@ -18,7 +21,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
-      {{#each posts}}
+      {{#each results}}
         <div class="post-preview">
           <a href="/post/{{id}}">
             <h2 class="post-title">

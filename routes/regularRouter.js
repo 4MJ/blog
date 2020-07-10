@@ -12,7 +12,7 @@ router.get('/posts/new', (req, res) => {
 });
 
 //To post a new Post
-app.post('/posts/store', (req, res) => {
+router.post('/posts/store', (req, res) => {
     let data = {author_name: req.body.username, blog_title: req.body.title, decs: req.bod.description, content: req.body.content};
     let sql = "INSERT INTO blogpost SET ?";
     let query = conn.query(sql, data,(err, results) => {
