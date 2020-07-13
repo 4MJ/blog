@@ -25,13 +25,15 @@
         <div class="post-preview">
           <a href="/post/{{id}}">
             <h2 class="post-title">
-              {{ title }}
+              {{ blog_title }}
             </h2>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">{{ username }}</a>
+            <a href="/post/{{id}}">{{ author_name }}</a>
             {{!-- on {{ post.createdAt.toDateString() }} --}}
           </p>
+          <a class="btn btn-warning float-right" href="/update">Update post</a>
+          <a class="btn btn-danger float-right" href="/delete/{{id}}">Delete</a>
         </div>
         <hr>
       {{/each}}
